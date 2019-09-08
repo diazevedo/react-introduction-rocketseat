@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import TechItem from "../TechItem/";
+
 import "./style.css";
 
 class TechList extends Component {
@@ -27,16 +29,11 @@ class TechList extends Component {
         <h2>{this.state.newTech}</h2>
         <ul className="tech-list">
           {this.state.techs.map((tech, i) => (
-            <li key={i}>
-              {tech}
-              <button
-                className="button-delete-tech"
-                type="button"
-                onClick={() => this.handleDelete(tech)}
-              >
-                Delete
-              </button>
-            </li>
+            <TechItem
+              key={i}
+              item={tech}
+              onDelete={() => this.handleDelete(tech)}
+            />
           ))}
         </ul>
         <input
