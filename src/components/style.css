@@ -1,0 +1,33 @@
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-bottom: 5px;
+}
+h2 {
+  text-align: center;
+  width: inherit;
+}
+
+.text-add-tech {
+  margin-right: 10px;
+}
+
+.button-add-tech,
+.text-add-tech {
+  margin-top: 15px;
+  height: 20px;
+  width: 100px;
+}
+
+.button-delete-tech {
+  margin-left: 20px;
+  height: 20px;
+  width: 50px;
+}
