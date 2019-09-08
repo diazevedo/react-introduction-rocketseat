@@ -11,4 +11,8 @@ const TechItem = ({ item, onDelete }) => {
   );
 };
 
+TechItem.defaultProps = {
+  item: ""
+};
+
 export default TechItem;
